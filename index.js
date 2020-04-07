@@ -77,7 +77,7 @@ client.on("message", m => {
             A robot must protect its own existence as long as such protection does not conflict with the First or Second Laws.`,`#ffffff`));
         }
 
-        if(m.content === "rose are red"){
+        if(m.content === "roses are red"){
             if(Math.floor(Math.random()*2) == 1){
                 return m.channel.send(`Violets are Blue
                 Unexpected '{'
