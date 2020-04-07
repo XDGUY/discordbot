@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const {token, prefix} = require ("./bot.json");
+const {prefix} = require ("./bot.json");
 const fs = require('fs');
+const token = process.env.token;
 
 function name(){
     return `ʇoq 0773H`;
