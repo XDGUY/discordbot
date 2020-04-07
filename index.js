@@ -82,7 +82,8 @@ client.on("message", m => {
                 return m.channel.send(`
                 Violets are Blue
                 Unexpected '{'
-                on line 32.`);
+                on line 32.
+                `);
             }else{
                 return m.channel.send(`
                 Violets are Blue
@@ -91,7 +92,8 @@ client.on("message", m => {
                 Don't you worry
                 I'll be there too,
                 Not in the cage
-                But laughing at you`);
+                But laughing at you
+                `);
             }
         }
 
