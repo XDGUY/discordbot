@@ -80,7 +80,9 @@ client.on("message", m => {
         if(m.content === "roses are red"){
             if(Math.floor(Math.random()*2) == 1){
                 return m.channel.send(`
-                    Violets are Blue\nUnexpected '{'\non line 32.
+                    Violets are Blue
+synatax error
+on line 32.
                 `);
             }else{
                 return m.channel.send(`
