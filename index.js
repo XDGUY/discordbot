@@ -79,11 +79,13 @@ client.on("message", m => {
 
         if(m.content === "roses are red"){
             if(Math.floor(Math.random()*2) == 1){
-                return m.channel.send(`Violets are Blue
+                return m.channel.send(`
+                Violets are Blue
                 Unexpected '{'
                 on line 32.`);
             }else{
-                return m.channel.send(`Violets are Blue
+                return m.channel.send(`
+                Violets are Blue
                 A face like yours
                 belongs in a zoo
                 Don't you worry
