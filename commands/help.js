@@ -13,3 +13,4 @@ module.exports = {
 }
 
 //command not found type %pleh for more info:information_source:
+//upside down word throw clear
