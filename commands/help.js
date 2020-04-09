@@ -8,7 +8,9 @@ module.exports = {
     `prefix is %(some commands start with %)
     
     throw: throw things
-    speak: I can speak to you`, `ffffff`));
+    speak: I can speak to you
+    dlm: 
+    `, `ffffff`));
   }
 }
 

@@ -52,7 +52,7 @@ exports.delid = delid;
 
 client.on("message", m => {
     var args = m.content.slice(prefix.length).split(/ +/);
-    if(deletes&&!args[0]==="dlm"&&m.channel.id === delchannel){
+    if(!((m.author.id == "645608642627764236"))&&(deletes)&&(!(args[0]==="dlm")) && (m.channel.id === delchannel)){
         return m.delete();
     }
     if(m.content === "Eric..."){
