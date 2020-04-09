@@ -22,7 +22,7 @@ function embedFrom(author,title,msg,color){
 exports.embedFrom = embedFrom;
 
 client.once('ready', () => {
-    console.log('Ready!');
+    console.log('Ready! set! go!');
 });
 
 
@@ -52,7 +52,7 @@ exports.delid = delid;
 
 client.on("message", m => {
     var args = m.content.slice(prefix.length).split(/ +/);
-    if(deletes&&!args[0]==="dlm"&&m.channel.id === "delchannel"){
+    if(deletes&&!args[0]==="dlm"&&m.channel.id === delchannel){
         return m.delete();
     }
     if(m.content === "Eric..."){
