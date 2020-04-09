@@ -5,6 +5,7 @@ const fs = require('fs');
 const token = process.env.token;
 const max = 3
 var result = Math.floor(Math.random() * max);
+bot.user.setPresence({ game: { name: 'with depression', type: "streaming", url: "https://www.twitch.tv/monstercat"}}); 
 
 function name(){
     return `ʇoq 0773H`;
