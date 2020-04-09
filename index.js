@@ -3,7 +3,6 @@ const client = new Discord.Client();
 const {prefix} = require ("./bot.json");
 const fs = require('fs');
 const token = process.env.token;
-var result = Math.floor(Math.random() * max);
 
 function name(){
     return `ʇoq 0773H`;
