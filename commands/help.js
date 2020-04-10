@@ -9,7 +9,7 @@ module.exports = {
     
     throw: throw things
     speak: I can speak to you
-    dlm: I delete everything you say. 
+    dlm: I delete everything you say. (Type on and off the activate and deactivate this function.)
     `, `ffffff`));
   }
 }
