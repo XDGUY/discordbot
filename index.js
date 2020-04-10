@@ -23,6 +23,7 @@ exports.embedFrom = embedFrom;
 
 client.once('ready', () => {
     console.log('Ready! set! go!');
+    client.user.setActivity(`over ${client.users.size} users!`, {type: "watching"});
 });
 
 
