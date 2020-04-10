@@ -23,7 +23,7 @@ exports.embedFrom = embedFrom;
 
 client.once('ready', () => {
     console.log('Ready! set! go!');
-    client.user.setActivity(`chilling`, {type: "CUSTOM_STATUS"});
+    client.user.setActivity(`your commands`, {type: "LISTENING"});
 });
 
 
