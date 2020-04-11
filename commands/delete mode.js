@@ -7,15 +7,11 @@ module.exports = {
     exec(m,args){
         if(args[0]==="on"){
             m.channel.send('delete mode on. channel is very dangerous now. GG');
-            main.delid(m.channel.id);
-            s.dlmc.push(m.channel.id);
-            let data = JSON.stringify(m.channel.id);
-            fs.writeFileSync('dlmchid.json', data);
-            return main.delboo(true);
+            return main.delidboo(m.channel.id,true);
         }
         else if(args[0]==="off"){
             m.channel.send('delete mode off. You can type now. Yeah!');
-            return main.delboo(false);
+            return main.delidboo(false);
         }
         return  m.channel.send(`
 type 'dlm on' to activate the delete mode, 

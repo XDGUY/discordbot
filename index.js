@@ -50,8 +50,7 @@ function delidboo(id, deltf){
     channels.set(id, deltf);
 }
 
-exports.delboo = delboo;
-exports.delid = delid;
+exports.delidboo = delidboo;
 
 client.on("message", m => {
     var args = m.content.slice(prefix.length).split(/ +/);
