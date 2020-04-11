@@ -1,4 +1,5 @@
 const main = require("../index.js");
+const fs = require('fs');
 
 module.exports = {
     name:"dlm",
