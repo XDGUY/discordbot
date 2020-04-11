@@ -7,6 +7,8 @@ module.exports = {
         if(args[0]==="on"){
             m.channel.send('delete mode on. channel is very dangerous now. GG');
             main.delid(m.channel.id);
+            let data = JSON.stringify(m.channel.id);
+            fs.writeFileSync('bot.json', data);
             return main.delboo(true);
         }
         else if(args[0]==="off"){
