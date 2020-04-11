@@ -4,7 +4,7 @@ const {prefix} = require ("./bot.json");
 const fs = require('fs');
 const token = process.env.token;
 const dlmc = [];
-const dc = require('dlmcjid');
+const dc = require('dlmchjid');
 
 function name(){
     return `ʇoq 0773H`;
