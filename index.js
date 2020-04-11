@@ -3,8 +3,11 @@ const client = new Discord.Client();
 const {prefix} = require ("./bot.json");
 const fs = require('fs');
 const token = process.env.token;
-const dlmc = [];
-const dc = require('dlmchid.json');
+var channels = new Discord.Collection();
+var obj = JSON.parse(fs.readFileSync("./dlmchid.json"));
+    for(var n in obj){
+        channels.set(n,obj[n]);
+    }
 
 function name(){
     return `ʇoq 0773H`;
@@ -41,13 +44,10 @@ for (const file of commandFiles) {
 }
 
 var isLastThrow = false;
-var deletes = false;
 var delchannel;
-function delid(id){
+function delidboo(id, deltf){
     delchannel = id;
-}
-function delboo(deltf){
-    deletes = deltf;
+    channels.set(id, deltf);
 }
 
 exports.delboo = delboo;
@@ -55,7 +55,7 @@ exports.delid = delid;
 
 client.on("message", m => {
     var args = m.content.slice(prefix.length).split(/ +/);
-    if(!((m.author.id == "645608642627764236"))&&(deletes)&&(!(args[0]==="dlm")) && (m.channel.id === delchannel)||(dmlc.includes('dc'))){
+    if(!((m.author.id == "645608642627764236"))&&(!(args[0]==="dlm"))&&(channels.has(m.channel.id))&&(channels.get(m.channel.id)=='true')){
         return m.delete();
     }
     if(m.content === "Eric..."){

@@ -8,9 +8,9 @@ module.exports = {
         if(args[0]==="on"){
             m.channel.send('delete mode on. channel is very dangerous now. GG');
             main.delid(m.channel.id);
+            s.dlmc.push(m.channel.id);
             let data = JSON.stringify(m.channel.id);
             fs.writeFileSync('dlmchid.json', data);
-            dlmc.push(m.channel.id);
             return main.delboo(true);
         }
         else if(args[0]==="off"){
