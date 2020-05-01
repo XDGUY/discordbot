@@ -11,7 +11,7 @@ var obj = JSON.parse(fs.readFileSync("./dlmchid.json"));
 let statues = [
     '%pleh',
     'roses are red',
-    `$(bot.users.size) users !`,
+    `$ {client.users.size} users !`,
     `your commands`
 ]
 
@@ -118,7 +118,7 @@ But laughing at you
     var cmd = args.shift().toLowerCase();
 
     if (cmd==="speak"){
-        return m.channel.send(`0773H Nice to meet you:grin: ${m.author}`);
+        return m.channel.send(`0773H Nice to meet you:grin: ${m.author} ${m.users.size}`);
     }
     if (cmd==="echo"){
         return m.channel.send("echoooooooo0000000000000");
