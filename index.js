@@ -11,7 +11,7 @@ var obj = JSON.parse(fs.readFileSync("./dlmchid.json"));
 let statues = [
     '%pleh',
     'roses are red',
-    `${client.users.size} users !`,
+    `${client.guilds.memberCount} users !`,
     `your commands`
 ]
 
