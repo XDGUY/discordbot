@@ -11,7 +11,7 @@ var obj = JSON.parse(fs.readFileSync("./dlmchid.json"));
 let statues = [
     '%pleh',
     'roses are red',
-    `${client.guilds.memberCount} users !`,
+    `${message.guild.memberCount} users !`,
     `your commands`
 ]
 
@@ -118,7 +118,7 @@ But laughing at you
     var cmd = args.shift().toLowerCase();
 
     if (cmd==="test"){
-        return m.channel.send("on");           //check if pull
+        return m.channel.send("off");           //check if pull
     }
 
     if (cmd==="speak"){
