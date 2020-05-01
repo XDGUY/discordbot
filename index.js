@@ -8,6 +8,13 @@ var obj = JSON.parse(fs.readFileSync("./dlmchid.json"));
     for(var n in obj){
         channels.set(n,obj[n]);
     }
+let statues = {
+    '%pleh',
+    `try Eric...`,
+    `roses are red`,
+    `$(bot.users.size) users !`,
+    `your commands`
+}
 
 function name(){
     return `ʇoq 0773H`;
@@ -28,7 +35,10 @@ exports.embedFrom = embedFrom;
 
 client.once('ready', () => {
     console.log('Ready! set! go!');
-    client.user.setActivity(`your commands`, {type: "LISTENING"});
+    setinterval(function(){
+        let status = statues[Math.floor(Math.random() * statues.length)];
+        client.user.setActivity(status, {type: "LISTENING"});
+    })
 });
 
 
