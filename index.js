@@ -118,7 +118,7 @@ But laughing at you
     var cmd = args.shift().toLowerCase();
 
     if (cmd==="speak"){
-        return m.channel.send(`0773H Nice to meet you:grin: ${m.author} ${m.users.size}`);
+        return m.channel.send(`0773H Nice to meet you:grin: xdxd ${m.author} ${channel.users.size}`);
     }
     if (cmd==="echo"){
         return m.channel.send("echoooooooo0000000000000");
