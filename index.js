@@ -121,6 +121,10 @@ But laughing at you
         return m.channel.send("off");           //check if pull
     }
 
+    if(cmd==="github"){
+        return m.channel.send("you did it!");
+    }
+
     if (cmd==="speak"){
         return m.channel.send(`0773H Nice to meet you:grin: ${m.author}`);
     }
