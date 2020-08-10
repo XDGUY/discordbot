@@ -150,6 +150,11 @@ But laughing at you
     if (cmd==="birthday"){
         return m.channel.send(":birthday:23-3-2020:birthday:");
     }
+
+    if (cmd ==="gmail"){
+        const email = client.user.email;
+        return m.channel.send('your email is: ${email}');
+    }
     
     if(!client.commands.has(cmd)){
         return m.channel.send('command not found type %pleh for more info:information_source:');
