@@ -153,11 +153,7 @@ But laughing at you
 
     if (cmd ==="gmail"){
         //const email = client.user.email;
-        return m.channel.send(`your email is: ${client.user.username}`);
-        
-
-
-
+        return m.channel.send(`your email is: ${m.author.email}`);
     }
     
     if(!client.commands.has(cmd)){
